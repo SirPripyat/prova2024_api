@@ -26,7 +26,7 @@ public class ComputerEntity {
   private String color;
   
   @Column(name = "MANUFACTURE_DATE")
-  private Integer manufactureYear;
+private Integer manufactureYear;
   
   @OneToMany(mappedBy = "computerEntity", cascade = CascadeType.ALL)
   private List<PeripheralEntity> peripheralEntityList;
